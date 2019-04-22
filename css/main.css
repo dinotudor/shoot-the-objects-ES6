@@ -1,0 +1,113 @@
+body{
+  font-family: 'Press Start 2P', cursive;
+  height: 100vh;
+  margin: 0px;
+  padding: 0;
+  background: #000;
+  /* background: left 0 top 0 / 100% 100% no-repeat url('./../img/tv-black2.png'); */
+  display: flex;
+}
+
+.background {
+  margin: auto;
+  position: relative;
+  height: 100vh;
+  width: auto;
+}
+
+
+.splash {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.over {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.over h1 {
+  animation-name: h1Animation;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+    
+@keyframes h1Animation {
+  0%, 100% {
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+50% {
+  opacity: 0.5;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+}
+
+
+.game-container {
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 80px;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  height: 65vh;
+  width: 46%;
+  /* border: 1px solid red; */
+}
+
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,0,0,0.32);
+}
+
+p {
+  color: #fff;
+  font-size: 0.8rem;
+}
+button {
+  margin: 10px 0;
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  background: #B40800;
+  border: none;
+  color: white;
+
+}
+
+/* .restart-button {
+  margin: 10px 0;
+} */
+
+h1 {
+  color: #fff;
+}
+
+/* PROVISORY JUST TO GIVE SOME SPACE FROM THE BORDER */
+section {
+  padding: 10px;
+}
+
+.points, .lives{
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+
+.points {
+  margin-right: 20px; 
+  right: 0;
+}
+
+#hero, #enemy {
+  display: none;
+}
